@@ -1,0 +1,112 @@
+.main {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.first-sedan {
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 320px;
+}
+
+.two-suv {
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+    width: 320px;
+}
+
+.third-Luxury {
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: space-around;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 320px;
+}
+
+.title {
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 0.9375rem;
+    margin-top: 1rem;
+}
+
+.comm {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.9375rem;
+
+}
+
+
+.first-sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+.two-suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+.third-Luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    background: hsla(0, 0%, 100%, 0.75);
+    border-radius: 30px;
+    border: none;
+    padding: 1rem;
+    font-family: 'Lexend Deca';
+    font-size: 0.9375rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 3rem;
+}
+
+button:hover {
+    color: hsla(0, 0%, 100%, 0.75);
+    background: transparent;
+    outline: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+
+    .first-sedan {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+
+    .third-Luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+}
